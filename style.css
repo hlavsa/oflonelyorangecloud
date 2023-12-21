@@ -6,7 +6,7 @@ body {
   display: grid;
   place-items: center;
   min-height: 100vh;
-  background-image: "./bg.jpg";
+  background-image: url("./bg.jpg");
 }
 .dark-mode {
     background-color: #171e22;
