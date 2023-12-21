@@ -24,6 +24,10 @@ modeToggle.addEventListener("click", () => {
 // JavaScript to handle scroll event
 window.addEventListener("scroll", function () {
   var hero = document.getElementById("hero");
-  var fadeOutEffect = 1 - window.scrollY / (hero.clientHeight / 2);
+  var scrollStart = 300; // The scroll position (in pixels) at which the fade-out starts
+  var fadeOutLength = 200; // The length of the scroll (in pixels) over which the fade-out occurs
+
+  var scrollY = Math.max(window.scrollY - scrollStart, 0);
+  var fadeOutEffect = 1 - scrollY / fadeOutLength;
   hero.style.opacity = Math.max(fadeOutEffect, 0);
 });
