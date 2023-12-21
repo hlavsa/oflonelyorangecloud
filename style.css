@@ -1,8 +1,13 @@
 body {
-    transition: background-color 0.3s ease;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: background-color 800ms cubic-bezier(.25,.46,.45,.94);
 }
 
+#hero {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-image: "./bg.jpg";
+}
 .dark-mode {
     background-color: #171e22;
     color: #ffffff;
