@@ -24,14 +24,8 @@ modeToggle.addEventListener("click", () => {
 // JavaScript to handle scroll event
 window.addEventListener("scroll", function () {
   var hero = document.getElementById("hero");
-
-  // Use a fraction of the hero's height or viewport height to determine when the fade-out starts and its length
-  var scrollStartFraction = 0.5; // e.g., fade-out starts after scrolling half of the hero's height
-  var fadeOutLengthFraction = 0.3; // e.g., fade-out occurs over 30% of the hero's height
-
-  var heroHeight = hero.offsetHeight;
-  var scrollStart = heroHeight * scrollStartFraction;
-  var fadeOutLength = heroHeight * fadeOutLengthFraction;
+  var scrollStart = 300; // The scroll position (in pixels) at which the fade-out starts
+  var fadeOutLength = 200; // The length of the scroll (in pixels) over which the fade-out occurs
 
   var scrollY = Math.max(window.scrollY - scrollStart, 0);
   var fadeOutEffect = 1 - scrollY / fadeOutLength;
