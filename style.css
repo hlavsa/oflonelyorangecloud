@@ -4,12 +4,9 @@ body {
 }
 
 #hero {
-  display: grid;
-  place-items: center;
-  min-height: 100vh;
   background-image: url("./bg.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .dark-mode {
   background-color: #90aeb6;
