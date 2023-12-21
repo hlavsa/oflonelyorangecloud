@@ -9,12 +9,12 @@ const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matche
 // Set initial mode based on user preference
 if (prefersDarkMode) {
     body.classList.add('dark-mode');
-    modeIcon.innerText = '☀️';
+    modeIcon.innerText = 'Přepnout do ☀️';
 }
 
 // Toggle dark mode
 modeToggle.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
     const isDarkMode = body.classList.contains('dark-mode');
-    modeIcon.innerText = isDarkMode ? '☀️' : '🌙';
+    modeIcon.innerText = isDarkMode ? 'Přepnout do ☀️' : 'Přepnout do 🌙';
 });
