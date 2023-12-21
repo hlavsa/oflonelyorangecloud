@@ -26,6 +26,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   window.addEventListener("scroll", function () {
     var hero = document.getElementById("hero");
+    if (!hero) {
+      console.log("Hero element not found");
+      return;
+    }
+
     var scrollStart = 300;
     var fadeOutLength = 200;
 
