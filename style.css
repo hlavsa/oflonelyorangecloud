@@ -7,8 +7,10 @@ body {
   place-items: center;
   min-height: 100vh;
   background-image: url("./bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .dark-mode {
-    background-color: #171e22;
+    background-color: #90aeb6;
     color: #ffffff;
 }
