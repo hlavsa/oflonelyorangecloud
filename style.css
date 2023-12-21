@@ -1,5 +1,6 @@
 body {
     transition: background-color 800ms cubic-bezier(.25,.46,.45,.94);
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #hero {
