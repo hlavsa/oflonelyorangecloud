@@ -22,15 +22,17 @@ modeToggle.addEventListener("click", () => {
 });
 
 // JavaScript to handle scroll event
-window.addEventListener("scroll", function () {
-  var hero = document.getElementById("hero");
-  var scrollStart = 300;
-  var fadeOutLength = 200;
+document.addEventListener("DOMContentLoaded", (event) => {
+  window.addEventListener("scroll", function () {
+    var hero = document.getElementById("hero");
+    var scrollStart = 300;
+    var fadeOutLength = 200;
 
-  var scrollY = Math.max(window.scrollY - scrollStart, 0);
-  var fadeOutEffect = 1 - scrollY / fadeOutLength;
+    var scrollY = Math.max(window.scrollY - scrollStart, 0);
+    var fadeOutEffect = 1 - scrollY / fadeOutLength;
 
-  console.log("Scroll Y:", window.scrollY, "Fade Out Effect:", fadeOutEffect);
+    console.log("Scroll Y:", window.scrollY, "Fade Out Effect:", fadeOutEffect);
 
-  hero.style.opacity = Math.max(fadeOutEffect, 0);
+    hero.style.opacity = Math.max(fadeOutEffect, 0);
+  });
 });
