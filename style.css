@@ -9,6 +9,7 @@ body {
   background-size: cover;
 }
 .dark-mode {
-  background-color: #90aeb6;
+  /* background-color: #90aeb6; */
+  background-color: #598991;
   color: #dbe5e8;
 }
