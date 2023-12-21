@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include Tailwind CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Light/Dark Mode Switcher</title>
+</head>
+<body>
+    <div id="app" class="container mx-auto p-4">
+        <div class="flex items-center justify-between mb-4">
+            <h1 class="text-3xl font-semibold">Light/Dark Mode Switcher</h1>
+            <button id="modeToggle" class="px-4 py-2 bg-gray-300 rounded-full">
+                <span id="modeIcon" class="text-gray-800">&#9728;</span>
+            </button>
+        </div>
+        <!-- Content goes here -->
+    </div>
+  <!-- Container -->
+    <div class="container mx-auto px-4">
+        <!-- Rows for Image and Paragraph -->
+        <!-- Repeat the following div for each row (4 times) -->
+        <!-- ... (existing rows here) -->
+
+        <!-- Last Row (Callout to buy a book) -->
+        <!-- ... (existing callout row here) -->
+
+        <!-- Audio Player Row -->
+        <div class="flex flex-row py-4 items-center">
+            <div class="w-full">
+                <audio controls class="w-full">
+                    <source src="xirb_try.m4a" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
